@@ -38,7 +38,7 @@ class Parser:
         clickable_element.click()
 
     def get_info(self):
-        for link in self.links_list[:7]:
+        for link in self.links_list:
             self.driver.get(link + "#characteristics")
             time.sleep(6)
             # wait = WebDriverWait(self.driver, 10)
